@@ -7802,27 +7802,18 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%E2%84%961.-%D0%9B%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D1%8F">Лабораторная работа №1. Логистическая регрессия<a class="anchor-link" href="#%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%E2%84%961.-%D0%9B%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D1%8F">¶</a></h1><h2 id="%D0%9F%D1%80%D0%B5%D0%B4%D1%81%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D1%82%D1%82%D0%BE%D0%BA%D0%B0-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-%D0%B1%D0%B0%D0%BD%D0%BA%D0%B0">Предсказание оттока клиентов банка<a class="anchor-link" href="#%D0%9F%D1%80%D0%B5%D0%B4%D1%81%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D1%82%D1%82%D0%BE%D0%BA%D0%B0-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-%D0%B1%D0%B0%D0%BD%D0%BA%D0%B0">¶</a></h2><p><strong>Цель:</strong> по характеристикам клиента оценить вероятность ухода из банка и
-получить прогноз класса: <code>Exited = 1</code> — клиент ушёл, <code>Exited = 0</code> — остался.</p>
-<p>В работе выполнены загрузка и проверка данных, разведывательный анализ,
-подготовка признаков, обучение логистической регрессии, оценка качества,
-подбор порога и интерпретация результатов.</p>
-<h3 id="%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%8B-%D0%B8-%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Материалы и источник данных<a class="anchor-link" href="#%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%8B-%D0%B8-%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">¶</a></h3><p>Постановка взята из приложенного файла <code>01-Logistic_Regression-ЛР.pdf</code>.
-Архив <code>Пример-Классификация_Доходов_Людей-(Данные).zip</code> содержит <code>adult.csv</code>:
-это данные учебного примера о доходах, а не данные клиентов банка.
-Приложенные ноутбуки о диабете и пингвинах иллюстрируют методы классификации.
-Дерево решений в постановке необязательно и здесь не используется.</p>
-<p>Архив с банковскими данными, указанный в задании, среди приложений отсутствует.
-Поэтому использована общедоступная копия <strong>Churn_Modelling.csv</strong> из
-<a href="https://github.com/selva86/datasets/blob/master/Churn_Modelling.csv">репозитория selva86/datasets</a>,
-загруженная 20.10.2026. Её структура соответствует описанию в задании;
-побайтовое совпадение с отсутствующим архивом преподавателя проверить нельзя.
-Локальная копия находится в <code>data/Churn_Modelling.csv</code>; интернет для запуска не нужен.
-В методичке столбец назван <code>NumOfProduct</code>, в этой копии — <code>NumOfProducts</code>.</p>
-<p><strong>Как запускать:</strong> открыть этот ноутбук в Jupyter и выполнить все ячейки сверху вниз.
-Папка <code>data</code> должна находиться рядом с ноутбуком. В Google Colab можно загрузить
-CSV непосредственно в рабочую папку: код поддерживает и этот путь.
-Результаты расчётов и графики сохраняются в папке <code>results</code>.</p>
+<h1 id="%D0%9B%D0%A0-%E2%84%961.-%D0%9B%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D1%8F">ЛР №1. Логистическая регрессия<a class="anchor-link" href="#%D0%9B%D0%A0-%E2%84%961.-%D0%9B%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D1%8F">¶</a></h1><p>По данным клиента нужно предсказать, уйдёт ли он из банка.
+Целевая переменная <code>Exited</code>: 1 означает уход, 0 означает, что клиент остался.</p>
+<p>В работе используются данные <code>Churn_Modelling.csv</code> (10 000 клиентов).
+Банковского архива из задания среди приложений не было, поэтому взята
+<a href="https://github.com/selva86/datasets/blob/master/Churn_Modelling.csv">общедоступная копия</a>,
+загруженная 20.10.2026. Сравнить её с архивом преподавателя не удалось.
+В этой копии столбец называется <code>NumOfProducts</code>, в методичке указан <code>NumOfProduct</code>.</p>
+<p>Задание взято из <code>01-Logistic_Regression-ЛР.pdf</code>. Примеры про доходы,
+диабет и пингвинов использовались как образцы работы с классификаторами.
+Дерево решений в задании необязательно.</p>
+<p>CSV лежит в папке <code>data</code> рядом с ноутбуком. В Colab его можно загрузить
+в рабочую папку. Таблицы и графики сохраняются в <code>results</code>.</p>
 </div>
 </div>
 </div>
@@ -7935,7 +7926,7 @@ Name: Версия, dtype: object</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="2.-%D0%97%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0-%D0%B8-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">2. Загрузка и проверка данных<a class="anchor-link" href="#2.-%D0%97%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0-%D0%B8-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">¶</a></h2><p><code>RowNumber</code>, <code>CustomerId</code> и <code>Surname</code> служат для идентификации и исключаются
-из признаков модели. <code>Exited</code> — правильный ответ, его нельзя подавать модели
+из признаков модели. <code>Exited</code> содержит правильный ответ, его нельзя подавать модели
 как входной признак. Остальные 10 столбцов описывают клиента:</p>
 <table>
 <thead>
@@ -8537,7 +8528,7 @@ memory usage: 1.1+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3.-%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D0%BA%D0%B8">3. Разделение выборки<a class="anchor-link" href="#3.-%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D0%BA%D0%B8">¶</a></h2><p>Выделяем <strong>60%</strong> данных для обучения, <strong>20%</strong> для валидации и <strong>20%</strong> для теста.
+<h2 id="3.-%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D0%BA%D0%B8">3. Разделение выборки<a class="anchor-link" href="#3.-%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D0%BA%D0%B8">¶</a></h2><p>Выделяем 60% данных для обучения, 20% для валидации и 20% для теста.
 <code>stratify</code> сохраняет примерно одинаковую долю ушедших клиентов в каждой части.
 Разведывательные графики строим по обучающей части. Параметры масштабирования
 и кодирования обучаются только на ней; валидация нужна для подбора порога.
@@ -9005,18 +8996,18 @@ P(Exited=1\mid X) = \frac{1}{1 + e^{-z}}.$$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="6.-%D0%9C%D0%B5%D1%82%D1%80%D0%B8%D0%BA%D0%B8-%D0%B8-%D0%B2%D1%8B%D0%B1%D0%BE%D1%80-%D0%BF%D0%BE%D1%80%D0%BE%D0%B3%D0%B0-%D0%BD%D0%B0-%D0%B2%D0%B0%D0%BB%D0%B8%D0%B4%D0%B0%D1%86%D0%B8%D0%B8">6. Метрики и выбор порога на валидации<a class="anchor-link" href="#6.-%D0%9C%D0%B5%D1%82%D1%80%D0%B8%D0%BA%D0%B8-%D0%B8-%D0%B2%D1%8B%D0%B1%D0%BE%D1%80-%D0%BF%D0%BE%D1%80%D0%BE%D0%B3%D0%B0-%D0%BD%D0%B0-%D0%B2%D0%B0%D0%BB%D0%B8%D0%B4%D0%B0%D1%86%D0%B8%D0%B8">¶</a></h2><p>Положительный класс во всех метриках — ушедший клиент (<code>Exited=1</code>).</p>
+<h2 id="6.-%D0%9C%D0%B5%D1%82%D1%80%D0%B8%D0%BA%D0%B8-%D0%B8-%D0%B2%D1%8B%D0%B1%D0%BE%D1%80-%D0%BF%D0%BE%D1%80%D0%BE%D0%B3%D0%B0-%D0%BD%D0%B0-%D0%B2%D0%B0%D0%BB%D0%B8%D0%B4%D0%B0%D1%86%D0%B8%D0%B8">6. Метрики и выбор порога на валидации<a class="anchor-link" href="#6.-%D0%9C%D0%B5%D1%82%D1%80%D0%B8%D0%BA%D0%B8-%D0%B8-%D0%B2%D1%8B%D0%B1%D0%BE%D1%80-%D0%BF%D0%BE%D1%80%D0%BE%D0%B3%D0%B0-%D0%BD%D0%B0-%D0%B2%D0%B0%D0%BB%D0%B8%D0%B4%D0%B0%D1%86%D0%B8%D0%B8">¶</a></h2><p>Положительный класс во всех метриках: ушедший клиент (<code>Exited=1</code>).</p>
 <ul>
-<li><strong>Accuracy:</strong> доля всех верных ответов. При дисбалансе может вводить в заблуждение.</li>
-<li><strong>Precision:</strong> какая доля отмеченных моделью клиентов действительно ушла.</li>
-<li><strong>Recall:</strong> какую долю всех ушедших клиентов нашла модель.</li>
-<li><strong>F1:</strong> гармоническое среднее precision и recall; учитывает обе метрики.</li>
-<li><strong>ROC-AUC:</strong> качество ранжирования вероятностей по всем порогам.</li>
-<li><strong>Average precision (AP):</strong> сводная оценка кривой precision-recall.</li>
+<li>Accuracy: доля всех верных ответов. При дисбалансе может вводить в заблуждение.</li>
+<li>Precision: какая доля отмеченных моделью клиентов действительно ушла.</li>
+<li>Recall: какую долю всех ушедших клиентов нашла модель.</li>
+<li>F1: гармоническое среднее precision и recall; учитывает обе метрики.</li>
+<li>ROC-AUC: качество ранжирования вероятностей по всем порогам.</li>
+<li>Average precision (AP): сводная оценка кривой precision-recall.</li>
 </ul>
 <p>Для кампании удержания важен recall, но слишком много ложных срабатываний
 увеличивает число лишних обращений. Стоимости ошибок и бюджет в задании
-не заданы, поэтому заранее выбираем <strong>максимум F1 на валидации</strong> как учебный
+не заданы, поэтому заранее выбираем максимум F1 на валидации как учебный
 компромисс. Это не означает, что такой порог оптимален для прибыли банка.</p>
 </div>
 </div>
@@ -9575,7 +9566,7 @@ weighted avg     0.7987    0.7020    0.7289      2000
 <p>ROC-AUC и AP у полной модели одинаковы для двух порогов, потому что они
 вычисляются по одним и тем же вероятностям. Порог меняет итоговые классы,
 precision, recall и F1. AP сравниваем с долей положительного класса,
-а ROC-AUC — с уровнем 0.5 для случайного ранжирования.</p>
+а ROC-AUC: с уровнем 0.5 для случайного ранжирования.</p>
 </div>
 </div>
 </div>
@@ -9587,7 +9578,7 @@ precision, recall и F1. AP сравниваем с долей положите�
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="8.-%D0%92%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8">8. Визуализация границы решения простой модели<a class="anchor-link" href="#8.-%D0%92%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8">¶</a></h2><p>У модели на <code>Age</code> и <code>Balance</code> можно показать карту вероятностей в двух измерениях.
-Чёрная линия соответствует стандартному порогу 0.5. Точки — только обучающие
+Чёрная линия соответствует стандартному порогу 0.5. Точки: только обучающие
 клиенты. Для полной модели с множеством признаков аналогичный двумерный рисунок
 не отображал бы всё пространство признаков.</p>
 </div>
@@ -9663,10 +9654,10 @@ precision, recall и F1. AP сравниваем с долей положите�
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="9.-%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BF%D1%80%D0%B5%D1%82%D0%B0%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B9-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8">9. Интерпретация полной модели<a class="anchor-link" href="#9.-%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BF%D1%80%D0%B5%D1%82%D0%B0%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B9-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8">¶</a></h2><p>Положительный коэффициент увеличивает логарифм отношения шансов ухода,
-отрицательный — уменьшает, при фиксированных остальных признаках.
-<code>exp(coef)</code> — множитель <strong>шансов</strong>, а не вероятности.</p>
+отрицательный: уменьшает, при фиксированных остальных признаках.
+<code>exp(coef)</code>: множитель шансов, а не вероятности.</p>
 <p>Для числовых признаков коэффициент относится к увеличению на одно стандартное
-отклонение в обучении; для бинарных — к переходу 0 → 1. Категориальные
+отклонение в обучении; для бинарных: к переходу 0 → 1. Категориальные
 коэффициенты сравниваются с базовой категорией, которую выводим ниже.
 Такие связи не доказывают причинность и зависят от выбранной модели.</p>
 </div>
@@ -9864,7 +9855,7 @@ precision, recall и F1. AP сравниваем с долей положите�
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="10.-%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D0%BF%D1%80%D0%BE%D0%B3%D0%BD%D0%BE%D0%B7%D0%B0-%D0%B8-%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D0%BE%D0%B2">10. Пример прогноза и сохранение результатов<a class="anchor-link" href="#10.-%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D0%BF%D1%80%D0%BE%D0%B3%D0%BD%D0%BE%D0%B7%D0%B0-%D0%B8-%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D0%BE%D0%B2">¶</a></h2><p>Покажем первые восемь клиентов тестовой части в исходном порядке этой части.
-<code>probability_exit</code> — оценка вероятности моделью; <code>prediction_tuned</code> — её
+<code>probability_exit</code>: оценка вероятности моделью; <code>prediction_tuned</code>: её
 решение при выбранном по валидации пороге. Это прогноз, а не гарантия ухода.</p>
 </div>
 </div>
@@ -10116,13 +10107,13 @@ precision, recall и F1. AP сравниваем с долей положите�
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Ограничения.</strong> Оценка получена на одном случайном разбиении учебного набора.
+<p>Ограничения. Оценка получена на одном случайном разбиении учебного набора.
 В данных нет даты ухода, поэтому модель оценивает метку <code>Exited</code>, но не
 конкретный срок «ближайшего времени». Случайный тест не заменяет проверку
 на более поздних клиентах. Вероятности не проверены на калибровку.
 Линейная модель может пропускать нелинейности и взаимодействия признаков.
 Прогноз риска не доказывает, что конкретная кампания удержит клиента.</p>
-<p><strong>Что можно улучшить далее:</strong> проверить устойчивость метрик на нескольких
+<p>Что можно улучшить далее: проверить устойчивость метрик на нескольких
 разбиениях или кросс-валидации; оценить калибровку; проверить нелинейное
 представление числа продуктов и возраста. Это направления дальнейшей работы,
 а не выполненные в этой лабораторной эксперименты.</p>
