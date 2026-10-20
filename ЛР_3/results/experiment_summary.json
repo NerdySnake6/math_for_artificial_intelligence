@@ -1,0 +1,313 @@
+{
+  "profile": "Greenfield Town",
+  "seed": 42,
+  "torch_version": "2.14.1",
+  "numpy_version": "2.4.0",
+  "vocabulary_size": 51,
+  "dtm_shape": [
+    12,
+    51
+  ],
+  "density": 0.11274509876966476,
+  "active_dtm_entries": 69,
+  "classifier_loss_first": 1.0894666910171509,
+  "classifier_loss_last": 0.00564389256760478,
+  "training_accuracy": 1.0,
+  "new_document_logits": [
+    [
+      -1.301208734512329,
+      3.6014256477355957,
+      -1.58795166015625
+    ],
+    [
+      -0.39720505475997925,
+      -1.9846181869506836,
+      2.131554365158081
+    ]
+  ],
+  "new_document_classes": [
+    "Bakery",
+    "Library"
+  ],
+  "skipgram_pairs": 196,
+  "embedding_tokens": 67,
+  "embedding_vocabulary_size": 33,
+  "embedding_shape": [
+    33,
+    12
+  ],
+  "embedding_loss_final": 1.5769602060317993,
+  "neighbors": {
+    "gardener": [
+      [
+        "garden",
+        0.572888970375061
+      ],
+      [
+        "baker",
+        0.4638087749481201
+      ],
+      [
+        "gate",
+        0.4592163562774658
+      ]
+    ],
+    "librarian": [
+      [
+        "library",
+        0.6549561023712158
+      ],
+      [
+        "bakery",
+        0.5900365114212036
+      ],
+      [
+        "baker",
+        0.5329792499542236
+      ]
+    ]
+  },
+  "bpe_charset_size": 17,
+  "bpe_vocabulary_size": 50,
+  "bpe_merges": [
+    [
+      "_",
+      "g"
+    ],
+    [
+      "_g",
+      "a"
+    ],
+    [
+      "d",
+      "e"
+    ],
+    [
+      "_ga",
+      "r"
+    ],
+    [
+      "_gar",
+      "de"
+    ],
+    [
+      "_garde",
+      "n"
+    ],
+    [
+      "e",
+      "r"
+    ],
+    [
+      "_",
+      "b"
+    ],
+    [
+      "_garden",
+      "er"
+    ],
+    [
+      "e",
+      "s"
+    ],
+    [
+      "_garden",
+      "s"
+    ],
+    [
+      "_ga",
+      "t"
+    ],
+    [
+      "_gat",
+      "e"
+    ],
+    [
+      "_gardener",
+      "s"
+    ],
+    [
+      "_",
+      "w"
+    ],
+    [
+      "_w",
+      "a"
+    ],
+    [
+      "_wa",
+      "t"
+    ],
+    [
+      "_wat",
+      "er"
+    ],
+    [
+      "_",
+      "r"
+    ],
+    [
+      "_r",
+      "o"
+    ],
+    [
+      "_ro",
+      "s"
+    ],
+    [
+      "_ros",
+      "es"
+    ],
+    [
+      "_b",
+      "es"
+    ],
+    [
+      "_bes",
+      "i"
+    ],
+    [
+      "_besi",
+      "de"
+    ],
+    [
+      "_",
+      "t"
+    ],
+    [
+      "_t",
+      "h"
+    ],
+    [
+      "_th",
+      "e"
+    ],
+    [
+      "_b",
+      "a"
+    ],
+    [
+      "_ba",
+      "k"
+    ],
+    [
+      "_bak",
+      "er"
+    ],
+    [
+      "_baker",
+      "y"
+    ],
+    [
+      "_b",
+      "r"
+    ]
+  ],
+  "bpe_probe_tokens": {
+    "garden": [
+      "_garden"
+    ],
+    "garden7": [
+      "_garden",
+      "<UNK>"
+    ]
+  },
+  "lm_vocabulary_size": 14,
+  "known_next_token": "gate",
+  "unknown_context_next_token": "gate",
+  "known_next_probability": 0.16666666666666666,
+  "unknown_target_probability": 0.05555555555555555,
+  "probability_sum": 1.0,
+  "generation": "the garden gate opens at dawn the",
+  "perplexity": 5.634371266046903,
+  "rouge": {
+    "A": {
+      "ROUGE-1": 1.0,
+      "ROUGE-2": 0.6,
+      "ROUGE-L": 0.8312020460358057
+    },
+    "B": {
+      "ROUGE-1": 0.0,
+      "ROUGE-2": 0.0,
+      "ROUGE-L": 0.0
+    }
+  },
+  "elo": {
+    "Garden-LM": 1499.263693206478,
+    "Bakery-LM": 1501.5031170912061,
+    "Library-LM": 1499.233189702316
+  },
+  "baseline": {
+    "classification": {
+      "tokens": [
+        "fresh",
+        "bread",
+        "and",
+        "cakes"
+      ],
+      "known_tokens": [
+        "and",
+        "bread",
+        "cakes",
+        "fresh"
+      ],
+      "oov_tokens": [],
+      "active_features": 4,
+      "logits_shape": [
+        1,
+        3
+      ],
+      "probability_sum": 0.9999999403953552,
+      "class_name": "Bakery",
+      "message": "Класс выбран по известным бинарным признакам документа."
+    },
+    "embeddings": {
+      "query": "gardener",
+      "nearest": [
+        [
+          "garden",
+          0.572888970375061
+        ],
+        [
+          "baker",
+          0.4638087749481201
+        ],
+        [
+          "gate",
+          0.4592163562774658
+        ]
+      ],
+      "message": "Запрос найден в словаре эмбеддингов."
+    },
+    "bpe": {
+      "word": "garden7",
+      "tokens": [
+        "_garden",
+        "<UNK>"
+      ]
+    },
+    "language_model_and_metrics": {
+      "context": [
+        "the",
+        "garden"
+      ],
+      "predicted_token": "gate",
+      "predicted_probability": 0.16666666666666666,
+      "generated_text": "the garden gate opens at dawn the",
+      "perplexity": 5.634371266046903,
+      "rouge": {
+        "ROUGE-1": 1.0,
+        "ROUGE-2": 0.6,
+        "ROUGE-L": 0.8312020460358057
+      },
+      "elo_leader": "Bakery-LM",
+      "elo_total": 4500.0
+    }
+  },
+  "sandbox_baseline_unchanged": true,
+  "sandbox_oov_features": 0,
+  "sandbox_perplexity_is_inf": true,
+  "scenario_sha256": "3fea9ecd2ed2f594ba88b4c70f15e408b0de223957451150110ce732598f0306",
+  "control_cells_preserved": 11,
+  "mandatory_portfolio_checks_passed": 9
+}

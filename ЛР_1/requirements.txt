@@ -1,0 +1,6 @@
+# Проверенные версии. Python >= 3.11; полный запуск выполнен на Python 3.14.4.
+numpy==2.4.0
+pandas==2.3.3
+matplotlib==3.11.2
+scikit-learn==1.8.0
+ipykernel==7.4.0

@@ -1,0 +1,70 @@
+{
+  "python_version": "3.14.4",
+  "computational_dependencies": [
+    "Python standard library: math"
+  ],
+  "required_code_cells": 13,
+  "executed_code_cells": 14,
+  "shared_gradient_at_a_2": 5.0,
+  "automatic_gradient": 2.2839857484831385,
+  "numerical_gradient": 2.283985748363637,
+  "gradient_absolute_error": 1.195012977461829e-10,
+  "initial_loss": 1.0,
+  "initial_weight_gradient": -3.0,
+  "initial_bias_gradient": 0.6666666666666666,
+  "numerical_weight_gradient": -2.9999999999197335,
+  "numerical_bias_gradient": 0.6666666666488297,
+  "learning_rate": 0.2,
+  "epochs": 80,
+  "last_logged_loss_before_update": 0.025550030181410055,
+  "final_model_loss_after_update": 0.02524209027898801,
+  "final_weight": 1.8495130666687565,
+  "final_bias": -0.8591099191612305,
+  "decision_boundary": 0.46450600141399007,
+  "inputs": [
+    -3.0,
+    -2.0,
+    -1.0,
+    0.0,
+    1.0,
+    2.0
+  ],
+  "targets": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    1.0
+  ],
+  "predictions": [
+    -0.9999945622967157,
+    -0.9997802971885478,
+    -0.9911605296754576,
+    -0.6957987963048693,
+    0.7575341747647283,
+    0.9931949722390057
+  ],
+  "predicted_labels": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    1.0
+  ],
+  "training_accuracy": 1.0,
+  "manual_tanh_trace": {
+    "j": 0.7615941559557649,
+    "s_gradient": 0.41997434161402614,
+    "a_gradient": 0.8399486832280523,
+    "b_gradient": 0.20998717080701307
+  },
+  "product_rule_trace": {
+    "via_exp": 0.5235231780521059,
+    "via_sin": 1.3497625704310325,
+    "total": 1.8732857484831384,
+    "repeated_backward_gradient": 1.8732857484831384,
+    "lost_contribution_if_overwritten": 0.5235231780521059
+  }
+}

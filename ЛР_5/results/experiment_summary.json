@@ -1,0 +1,170 @@
+{
+  "python_version": "3.14.4",
+  "executed_code_cells": 14,
+  "computational_dependencies": [
+    "Python standard library: math"
+  ],
+  "models": {
+    "OR": {
+      "epochs": 300,
+      "learning_rate": 0.5,
+      "parameter_count": 3,
+      "initial_loss": 0.7200198425221698,
+      "last_logged_loss_before_update": 0.06236374801543139,
+      "final_model_loss_after_update": 0.062167395133066246,
+      "training_accuracy": 1.0,
+      "max_gradient_absolute_error": 9.045564297593955e-11,
+      "inputs": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "targets": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "probabilities": [
+        0.13200433213232757,
+        0.9478517568657973,
+        0.9482967689524896,
+        0.9995440205950941
+      ],
+      "predicted_labels": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "final_parameters": [
+        -1.8833519824799012,
+        4.792499207519084,
+        4.783459605715465
+      ]
+    },
+    "AND": {
+      "epochs": 300,
+      "learning_rate": 0.3,
+      "parameter_count": 5,
+      "initial_loss": 0.6933861312886811,
+      "last_logged_loss_before_update": 0.022928442324803712,
+      "final_model_loss_after_update": 0.022805302152791453,
+      "training_accuracy": 1.0,
+      "max_gradient_absolute_error": 6.138584085491061e-11,
+      "inputs": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "targets": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "probabilities": [
+        0.0037193584223685085,
+        0.019203018766091182,
+        0.019204423277084767,
+        0.9524535868989039
+      ],
+      "predicted_labels": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "final_parameters": [
+        -2.672670145931991,
+        1.9120071411863093,
+        1.9119804547806278,
+        -0.8874903368660907,
+        4.748072113967148
+      ]
+    },
+    "XOR": {
+      "epochs": 500,
+      "learning_rate": 0.5,
+      "parameter_count": 9,
+      "initial_loss": 0.6974895138776747,
+      "last_logged_loss_before_update": 0.025122785704812224,
+      "final_model_loss_after_update": 0.025026249835278142,
+      "training_accuracy": 1.0,
+      "max_gradient_absolute_error": 1.232095883652029e-10,
+      "inputs": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "targets": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "probabilities": [
+        0.018893036023121788,
+        0.9676336766552224,
+        0.9684286235905825,
+        0.01592091709544799
+      ],
+      "predicted_labels": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "final_parameters": [
+        1.3470174953214051,
+        2.974259387991254,
+        -2.8378944489531275,
+        1.5440786426584647,
+        -3.1725910261374977,
+        3.2457729544238205,
+        3.77900401650024,
+        -4.346347110102781,
+        -4.308728158933194
+      ]
+    }
+  }
+}
